@@ -32,6 +32,7 @@ if uploaded_file is not None:
 submit=st.button("Tell me about the image")
 
 ## if submit is clicked
-response=get_gemini_response(input,image)
-st.subheader("The Response is")
-st.write(response)
+if submit:
+    response=get_gemini_response(input,image)
+    st.subheader("The Response is")
+    st.write(response)
