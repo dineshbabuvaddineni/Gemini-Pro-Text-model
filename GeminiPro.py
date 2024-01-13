@@ -26,4 +26,4 @@ submit=st.button("Ask the question")
 if submit:
     response=get_gemini_response(input)
     st.subheader("The Response is")
-    st.write(response)
+    st.write(response) 
